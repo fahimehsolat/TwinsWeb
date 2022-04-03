@@ -1,0 +1,7 @@
+{
+  "name": "Twins",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
