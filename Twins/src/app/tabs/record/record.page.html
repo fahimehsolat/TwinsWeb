@@ -1,9 +1,96 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>record</ion-title>
+<ion-header >
+  <ion-toolbar color="secondary">
+    <ion-title text-center>ثبت اطلاعات جدید</ion-title>
   </ion-toolbar>
 </ion-header>
+<ion-content >
 
-<ion-content>
+
+  <ion-grid >
+    <ion-row class="ion-align-items-center ion-justify-content-center">
+      <ion-col size="9">
+
+  <ion-card color="secondary">
+    <ion-card-header >
+      <ion-card-subtitle> ثبت اطلاعات  </ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+
+
+      <ion-item >
+        <ion-label position="floating" >نام</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating"> نام خانوادگی</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">کد ملی</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">تاریخ تولد</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+
+
+      <ion-item >
+        <ion-label position="floating" >آدرس</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating"> شماره تلفن</ion-label>
+        <ion-input required type="number"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">تلفن ثابت</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label position="floating">ایمیل</ion-label>
+        <ion-input type="email"></ion-input>
+      </ion-item>
+
+
+
+
+    </ion-card-content>
+  </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-align-items-center ion-justify-content-center" >
+      <ion-col size="8" >
+    <ion-card color="secondary" >
+      <ion-card-header >
+        <ion-card-subtitle>عکس کاربری</ion-card-subtitle>
+      </ion-card-header>
+        <ion-card-content>
+          <ion-item class="second">
+            <ion-label id="profile_image" color="primary" stacked>Enter your image</ion-label>
+            <ion-input type="file" accept="image/*" ></ion-input>
+          </ion-item>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+</ion-row>
+</ion-grid>
+
+
+
+
+
+
+
+
+
 
 </ion-content>
