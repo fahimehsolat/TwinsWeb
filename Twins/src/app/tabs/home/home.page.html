@@ -1,9 +1,272 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>home</ion-title>
+<ion-header [translucent]="true">
+  <ion-toolbar color="secondary">
+    <ion-title>
+     home page
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <ion-card color="secondary">
+      <ion-card-header>
 
+        <ion-card-title>Image</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-item>
+          <ion-label id="profile_image" color="primary" stacked>Enter your image</ion-label>
+          <ion-input type="file" accept="image/*" ></ion-input>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+
+
+
+
+
+<ion-grid class="ion-margin">
+  <ion-row>
+
+    <ion-col size="9">
+<ion-card color="secondary">
+  <ion-card-header>
+    <ion-card-subtitle></ion-card-subtitle>
+    <ion-card-title>اطلاعات مادر</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-grid class="ion-margin">
+      <ion-row>
+
+        <ion-item>
+          <ion-label position="stacked">Name</ion-label>
+          <ion-input></ion-input>
+        </ion-item><ion-item>
+          <ion-label position="stacked">ID Code</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+      </ion-row>
+
+    </ion-grid>
+  </ion-card-content>
+</ion-card>
+</ion-col>
+<ion-col size="3">
+  <ion-card color="secondary">
+    <ion-card-header>
+
+      <ion-card-title>دسترسی و ویرایش فرم اطلاعات اولیه</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      .
+      .
+      .
+    </ion-card-content>
+  </ion-card>
+</ion-col>
+</ion-row>
+</ion-grid>
+
+
+<ion-grid class="ion-margin">
+  <ion-row>
+
+    <ion-col size="9">
+<ion-card color="secondary">
+  <ion-card-header>
+    <ion-card-subtitle></ion-card-subtitle>
+    <ion-card-title>نتایج پرسشنامه سلامت روان</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-grid class="ion-margin">
+      <ion-row>
+
+        <ion-col><ion-item href="#" class="ion-activated">
+          <ion-icon name="accessibility-outline"></ion-icon>
+          <ion-label>Twin 1</ion-label>
+          <!-- Input with placeholder -->
+      <ion-input placeholder="results"></ion-input>
+        </ion-item></ion-col>
+        <ion-col><ion-item href="#">
+          <ion-icon name="accessibility-outline"></ion-icon>
+          <ion-label>Twin 2</ion-label>
+          <!-- Input with placeholder -->
+      <ion-input placeholder="results"></ion-input>
+        </ion-item></ion-col>
+        <ion-col><ion-item class="ion-activated">
+          <ion-icon name="accessibility-outline"></ion-icon>
+          <ion-label>Twin 3</ion-label>
+          <!-- Input with placeholder -->
+      <ion-input placeholder="results"></ion-input>
+        </ion-item></ion-col>
+        <ion-col><ion-item>
+          <ion-icon name="accessibility-outline"></ion-icon>
+          <ion-label>Twin 4</ion-label>
+          <!-- Input with placeholder -->
+      <ion-input placeholder="results"></ion-input>
+        </ion-item></ion-col>
+
+      </ion-row>
+      <ion-row>
+
+        <ion-col><ion-item href="#" class="ion-activated">
+          <ion-item>
+            <ion-label id="profile_image" color="primary" stacked> image</ion-label>
+            <ion-input type="file" accept="image/*" ></ion-input>
+          </ion-item>
+          <!-- Input with placeholder -->
+      <ion-input placeholder="results"></ion-input>
+        </ion-item></ion-col>
+        <ion-col><ion-item href="#">
+          <ion-item>
+            <ion-label id="profile_image" color="primary" stacked> image</ion-label>
+            <ion-input type="file" accept="image/*" ></ion-input>
+          </ion-item>
+          <!-- Input with placeholder -->
+      <ion-input placeholder="results"></ion-input>
+        </ion-item></ion-col>
+        <ion-col><ion-item class="ion-activated">
+          <ion-item>
+            <ion-label id="profile_image" color="primary" stacked> image</ion-label>
+            <ion-input type="file" accept="image/*" ></ion-input>
+          </ion-item>
+          <!-- Input with placeholder -->
+      <ion-input placeholder="results"></ion-input>
+        </ion-item></ion-col>
+        <ion-col><ion-item>
+          <ion-item>
+            <ion-label id="profile_image" color="primary" stacked> image</ion-label>
+            <ion-input type="file" accept="image/*" ></ion-input>
+          </ion-item>
+          <!-- Input with placeholder -->
+      <ion-input placeholder="results"></ion-input>
+        </ion-item></ion-col>
+
+      </ion-row>
+
+    </ion-grid>
+  </ion-card-content>
+</ion-card>
+</ion-col>
+<ion-col size="3">
+  <ion-card color="secondary">
+    <ion-card-header>
+
+      <ion-card-title>نتایج پرسشنامه زیگوسیتی یا همسان بودن که توسط مادر پر شده است</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+     نتایج زیگوسیتی حاصل از DNA
+    </ion-card-content>
+  </ion-card>
+</ion-col>
+</ion-row>
+</ion-grid>
+
+
+
+<ion-grid class="ion-margin">
+  <ion-row>
+
+    <ion-col size="9">
+<ion-card color="secondary">
+  <ion-card-header>
+    <ion-card-subtitle></ion-card-subtitle>
+    <ion-card-title>نتایج  تست های آزمایشگاهی</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-grid class="ion-margin">
+      <ion-row>
+
+        <ion-col><ion-item href="#" class="ion-activated">
+          <ion-icon name="accessibility-outline"></ion-icon>
+          <ion-label>Twin 1</ion-label>
+          <!-- Input with placeholder -->
+      <ion-input placeholder="results"></ion-input>
+        </ion-item></ion-col>
+        <ion-col><ion-item href="#">
+          <ion-icon name="accessibility-outline"></ion-icon>
+          <ion-label>Twin 2</ion-label>
+          <!-- Input with placeholder -->
+      <ion-input placeholder="results"></ion-input>
+        </ion-item></ion-col>
+        <ion-col><ion-item class="ion-activated">
+          <ion-icon name="accessibility-outline"></ion-icon>
+          <ion-label>Twin 3</ion-label>
+          <!-- Input with placeholder -->
+      <ion-input placeholder="results"></ion-input>
+        </ion-item></ion-col>
+        <ion-col><ion-item>
+          <ion-icon name="accessibility-outline"></ion-icon>
+          <ion-label>Twin 4</ion-label>
+          <!-- Input with placeholder -->
+      <ion-input placeholder="results"></ion-input>
+        </ion-item></ion-col>
+
+      </ion-row>
+      <ion-row>
+
+        <ion-col><ion-item href="#" class="ion-activated">
+          <ion-item>
+            <ion-label id="profile_image" color="primary" stacked> image</ion-label>
+            <ion-input type="file" accept="image/*" ></ion-input>
+          </ion-item>
+          <!-- Input with placeholder -->
+      <ion-input placeholder="results"></ion-input>
+        </ion-item></ion-col>
+        <ion-col><ion-item href="#">
+          <ion-item>
+            <ion-label id="profile_image" color="primary" stacked> image</ion-label>
+            <ion-input type="file" accept="image/*" ></ion-input>
+          </ion-item>
+          <!-- Input with placeholder -->
+      <ion-input placeholder="results"></ion-input>
+        </ion-item></ion-col>
+        <ion-col><ion-item class="ion-activated">
+          <ion-item>
+            <ion-label id="profile_image" color="primary" stacked> image</ion-label>
+            <ion-input type="file" accept="image/*" ></ion-input>
+          </ion-item>
+          <!-- Input with placeholder -->
+      <ion-input placeholder="results"></ion-input>
+        </ion-item></ion-col>
+        <ion-col><ion-item>
+          <ion-item>
+            <ion-label id="profile_image" color="primary" stacked> image</ion-label>
+            <ion-input type="file" accept="image/*" ></ion-input>
+          </ion-item>
+          <!-- Input with placeholder -->
+      <ion-input placeholder="results"></ion-input>
+        </ion-item></ion-col>
+
+      </ion-row>
+
+
+
+
+    </ion-grid>
+  </ion-card-content>
+</ion-card>
+</ion-col>
+<ion-col size="3">
+  <ion-card color="secondary">
+    <ion-card-header>
+
+      <ion-card-title>Navigate</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+     Reports
+    </ion-card-content>
+    <ion-card-content>
+     other links
+     </ion-card-content>
+  </ion-card>
+</ion-col>
+</ion-row>
+</ion-grid>
+  </div>
 </ion-content>
