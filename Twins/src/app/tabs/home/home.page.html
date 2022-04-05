@@ -1,4 +1,12 @@
 <ion-header [translucent]="true">
+  <!-- <ion-list>
+    <ion-item *ngFor="let item of items">
+      <ion-thumbnail slot="start">
+        <ion-img [src]="item.src"></ion-img>
+      </ion-thumbnail>
+      <ion-label>{{item.text}}</ion-label>
+    </ion-item>
+  </ion-list> -->
   <ion-toolbar color="secondary">
     <ion-title>
      home page
@@ -31,7 +39,7 @@
 
     <ion-col size="9">
 <ion-card color="secondary">
-  <ion-card-header>
+  <ion-card-header class="ion-text-right">
     <ion-card-subtitle></ion-card-subtitle>
     <ion-card-title>اطلاعات مادر</ion-card-title>
   </ion-card-header>
@@ -55,7 +63,7 @@
 </ion-col>
 <ion-col size="3">
   <ion-card color="secondary">
-    <ion-card-header>
+    <ion-card-header class="ion-text-right">
 
       <ion-card-title>دسترسی و ویرایش فرم اطلاعات اولیه</ion-card-title>
     </ion-card-header>
@@ -76,7 +84,7 @@
 
     <ion-col size="9">
 <ion-card color="secondary">
-  <ion-card-header>
+  <ion-card-header class="ion-text-right">
     <ion-card-subtitle></ion-card-subtitle>
     <ion-card-title>نتایج پرسشنامه سلامت روان</ion-card-title>
   </ion-card-header>
@@ -153,12 +161,12 @@
 </ion-col>
 <ion-col size="3">
   <ion-card color="secondary">
-    <ion-card-header>
+    <ion-card-header class="ion-text-right">
 
       <ion-card-title>نتایج پرسشنامه زیگوسیتی یا همسان بودن که توسط مادر پر شده است</ion-card-title>
     </ion-card-header>
 
-    <ion-card-content>
+    <ion-card-content class="ion-text-right">
      نتایج زیگوسیتی حاصل از DNA
     </ion-card-content>
   </ion-card>
@@ -173,7 +181,7 @@
 
     <ion-col size="9">
 <ion-card color="secondary">
-  <ion-card-header>
+  <ion-card-header class="ion-text-right">
     <ion-card-subtitle></ion-card-subtitle>
     <ion-card-title>نتایج  تست های آزمایشگاهی</ion-card-title>
   </ion-card-header>
@@ -270,3 +278,21 @@
 </ion-grid>
   </div>
 </ion-content>
+
+<!-- <ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>Footer - No Border</ion-title>
+  </ion-toolbar>
+</ion-footer> -->
+<ion-footer collapse="fade">
+  <!-- <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="Home">Home</ion-tab-button>
+      <ion-tab-button tab="contact"> اخبار</ion-tab-button>
+      <ion-tab-button tab="settings">   آموزش های لازم</ion-tab-button>
+      <ion-tab-button tab="settings">Site Maps</ion-tab-button>
+      <ion-tab-button tab="settings">Links</ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs> -->
+  
+</ion-footer>

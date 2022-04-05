@@ -2,7 +2,16 @@
 // http://ionicframework.com/docs/theming/
 
 /** Ionic CSS Variables **/
+@font-face {
+  font-family: 'Qs_Iranyekan';
+  src: url("./assets/fonts/Qs_Iranyekan.ttf") format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
+  --ion-font-family:'Qs_Iranyekan';
+
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -233,7 +242,5 @@
 
     --ion-card-background: #1e1e1e;
   }
-  * {
-    font-family: 'Iranyekan' !important;
-}
+  
 }
