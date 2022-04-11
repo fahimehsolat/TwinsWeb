@@ -1,25 +1,39 @@
 <ion-header [translucent]="true">
-  <!-- <ion-list>
-    <ion-item *ngFor="let item of items">
-      <ion-thumbnail slot="start">
-        <ion-img [src]="item.src"></ion-img>
-      </ion-thumbnail>
-      <ion-label>{{item.text}}</ion-label>
-    </ion-item>
-  </ion-list> -->
-  <ion-toolbar color="tertiary">
+  <ion-toolbar color="#d4b3cf">
     <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
+      <ion-back-button defaultHref="home"></ion-back-button>
     </ion-buttons>
     <ion-title>
-     Home Page
+     home page
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+
+<ion-content [fullscreen]="true" color="light">
   <div id="container">
-    <ion-card color="secondary">
+
+    <ion-grid class="ion-margin">
+      <ion-row>
+
+        <ion-col size="2">
+          <ion-button color="light">home</ion-button>
+        </ion-col>
+        <ion-col size="2">
+          <ion-button href="http://localhost:8100/record" color="light">ثبت اطلاعات جدید</ion-button>
+        </ion-col>
+        <ion-col size="2">
+          <ion-button href="http://localhost:8100/edit" color="light">ویرایش اطلاعات</ion-button>
+        </ion-col>
+        <ion-col size="2">
+          <ion-button href="http://localhost:8100/about" color="light">about us</ion-button>
+        </ion-col>
+        <ion-col size="4">
+          <ion-searchbar  ></ion-searchbar>
+        </ion-col>
+</ion-row></ion-grid>
+
+    <ion-card color="tertiary">
       <ion-card-header>
 <div class="ion-text-center">
         <ion-card-title>Image</ion-card-title></div>
@@ -27,7 +41,7 @@
 
       <ion-card-content>
         <ion-item>
-          <ion-label id="profile_image" color="primary" stacked>Enter your image</ion-label>
+          <ion-label id="profile_image" color="secondary">Enter your image</ion-label>
           <ion-input type="file" accept="image/*" ></ion-input>
         </ion-item>
       </ion-card-content>
@@ -44,7 +58,7 @@
 <ion-card color="secondary">
   <ion-card-header>
     <ion-card-subtitle></ion-card-subtitle><div class="ion-text-center">
-    <ion-card-title>اطلاعات مادر</ion-card-title></div>
+    <ion-card-title color="success">اطلاعات مادر</ion-card-title></div>
   </ion-card-header>
 
   <ion-card-content>
@@ -65,8 +79,8 @@
 </ion-card>
 </ion-col>
 <ion-col size="3">
-  <ion-card color="secondary">
-    <ion-card-header class="ion-text-right">
+  <ion-card color="tertiary">
+    <ion-card-header>
 
       <ion-card-title> <div class="ion-text-center">دسترسی و ویرایش فرم اطلاعات اولیه</div></ion-card-title>
     </ion-card-header>
@@ -87,7 +101,7 @@
 
     <ion-col size="9">
 <ion-card color="secondary">
-  <ion-card-header class="ion-text-right">
+  <ion-card-header>
     <ion-card-subtitle></ion-card-subtitle>
     <ion-card-title> <div class="ion-text-center">نتایج پرسشنامه سلامت روان</div></ion-card-title>
   </ion-card-header>
@@ -163,13 +177,15 @@
 </ion-card>
 </ion-col>
 <ion-col size="3">
-  <ion-card color="secondary">
-    <ion-card-header class="ion-text-right">
+  <ion-card color="tertiary">
+    <ion-card-header>
 
       <ion-card-title> <div class="ion-text-center">نتایج پرسشنامه زیگوسیتی یا همسان بودن که توسط مادر پر شده است</div></ion-card-title>
     </ion-card-header>
 
-    <ion-card-content class="ion-text-center">     نتایج زیگوسیتی حاصل از DNA</ion-card-content>
+    <ion-card-content><div class="ion-text-center">
+     نتایج زیگوسیتی حاصل از DNA
+    </div></ion-card-content>
   </ion-card>
 </ion-col>
 </ion-row>
@@ -182,7 +198,7 @@
 
     <ion-col size="9">
 <ion-card color="secondary">
-  <ion-card-header class="ion-text-right">
+  <ion-card-header>
     <ion-card-subtitle></ion-card-subtitle>
     <ion-card-title> <div class="ion-text-center">نتایج  تست های آزمایشگاهی</div></ion-card-title>
   </ion-card-header>
@@ -261,7 +277,7 @@
 </ion-card>
 </ion-col>
 <ion-col size="3">
-  <ion-card color="secondary">
+  <ion-card color="tertiary">
     <ion-card-header>
 
       <ion-card-title> <div class="ion-text-center">Navigate</div></ion-card-title>
@@ -279,21 +295,3 @@
 </ion-grid>
   </div>
 </ion-content>
-
-<!-- <ion-footer class="ion-no-border">
-  <ion-toolbar>
-    <ion-title>Footer - No Border</ion-title>
-  </ion-toolbar>
-</ion-footer> -->
-<ion-footer collapse="fade">
-  <!-- <ion-tabs>
-    <ion-tab-bar slot="bottom">
-      <ion-tab-button tab="Home">Home</ion-tab-button>
-      <ion-tab-button tab="contact"> اخبار</ion-tab-button>
-      <ion-tab-button tab="settings">   آموزش های لازم</ion-tab-button>
-      <ion-tab-button tab="settings">Site Maps</ion-tab-button>
-      <ion-tab-button tab="settings">Links</ion-tab-button>
-    </ion-tab-bar>
-  </ion-tabs> -->
-  
-</ion-footer>
